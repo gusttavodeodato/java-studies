@@ -68,3 +68,7 @@ java -cp out etec.atividades.academia.Main
 ## Autor
 
 Gustavo Deodato
+
+## Licença
+
+Distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE).
