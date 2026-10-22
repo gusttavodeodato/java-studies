@@ -1,4 +1,4 @@
-package etec.aulas.abstracao.forma;
+package etec.atividades.polimorfismo.abstracao.forma;
 
 public abstract class Forma {
     protected String nome;

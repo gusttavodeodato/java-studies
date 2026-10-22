@@ -1,4 +1,4 @@
-package etec.aulas.abstracao.forma;
+package etec.atividades.polimorfismo.abstracao.forma;
 
 public class Quadrado extends Forma{
     private Integer lado;

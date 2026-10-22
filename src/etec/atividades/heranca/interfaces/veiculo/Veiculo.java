@@ -1,4 +1,4 @@
-package etec.aulas.interfaces.veiculo;
+package etec.atividades.heranca.interfaces.veiculo;
 
 public interface Veiculo {
     void acelerar();

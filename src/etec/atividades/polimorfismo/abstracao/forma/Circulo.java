@@ -1,4 +1,4 @@
-package etec.aulas.abstracao.forma;
+package etec.atividades.polimorfismo.abstracao.forma;
 
 public class Circulo extends Forma{
     private double raio;
