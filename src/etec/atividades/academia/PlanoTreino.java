@@ -5,20 +5,28 @@ import etec.atividades.academia.enums.Tipo;
 public class PlanoTreino {
     private String nome;
     private boolean ativo;
+    public static int totalPlanosAtivos = 0;
 
     private Tipo tipo;
 
-    public PlanoTreino(String nome, Tipo tipo){
+    public PlanoTreino(String nome, Tipo tipo) {
         this.nome = nome;
         this.tipo = tipo;
     }
 
+
     public void ativar() {
-        this.ativo = true;
+        if(!ativo) {
+            this.ativo = true;
+            totalPlanosAtivos++;
+        }
     }
 
     public void desativar() {
-        this.ativo = false;
+        if(ativo) {
+            this.ativo = false;
+            totalPlanosAtivos--;
+        }
     }
 
     public String getNome() {

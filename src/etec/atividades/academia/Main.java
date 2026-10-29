@@ -5,18 +5,24 @@ import etec.atividades.academia.funcionarioAbstracao.Funcionario;
 import etec.atividades.academia.funcionarioAbstracao.Gerente;
 import etec.atividades.academia.funcionarioAbstracao.Instrutor;
 
-import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.print("\n------ Dados do Aluno -------");
+        System.out.print("\n------ Dados dos Alunos -------");
         PlanoTreino plano = new PlanoTreino("Treino A", Tipo.MUSCULACAO);
         Aluno aluno1 = new Aluno("Rakim", 22);
 
         System.out.printf("%nPlano: %s | Tipo: %s%n", plano.getNome(), plano.getTipo().getDescricao());
         aluno1.apresentar();
         plano.ativar();
+
+        PlanoTreino musculacao = new PlanoTreino("Musculação", Tipo.MUSCULACAO);
+        Aluno aluno2 = new Aluno("Corey", 19);
+        System.out.printf("%nPlano: %s | Tipo: %s%n", musculacao.getNome(), musculacao.getTipo().getDescricao());
+        aluno2.apresentar();
+        musculacao.ativar();
+
 
         System.out.print("\n------ Dados do Instrutor -------");
         Funcionario instrutor = new Instrutor("Gustavo", 1000);
@@ -29,5 +35,8 @@ public class Main {
         gerente.processarPagamento(5000);
         gerente.mostrarDados();
         gerente.calcularBonus();
+
+
+        System.out.println("\nQuantidade de planos ativos: " + PlanoTreino.totalPlanosAtivos);
     }
 }
