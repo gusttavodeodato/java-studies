@@ -1,4 +1,4 @@
-package etec.atividades.polimorfismo.override;
+package etec.atividades.abstracao.override;
 
 public class Main {
     public static void main(String[] args) {

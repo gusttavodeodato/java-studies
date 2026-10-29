@@ -1,4 +1,4 @@
-package etec.atividades.heranca.interfaces.veiculo;
+package etec.atividades.interfaces.veiculo;
 
 public class Main {
     public static void main(String[] args) {

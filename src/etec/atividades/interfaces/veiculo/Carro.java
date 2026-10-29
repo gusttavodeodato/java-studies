@@ -1,4 +1,4 @@
-package etec.atividades.heranca.interfaces.veiculo;
+package etec.atividades.interfaces.veiculo;
 
 public class Carro implements Veiculo {
     private String marca;

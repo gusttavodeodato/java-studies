@@ -1,4 +1,4 @@
-package etec.atividades.polimorfismo.abstracao.forma;
+package etec.atividades.abstracao.forma;
 
 public class Main {
     public static void main(String[] args) {

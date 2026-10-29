@@ -1,4 +1,4 @@
-package etec.atividades.polimorfismo.overloading;
+package etec.atividades.abstracao.overloading;
 
 public class Main {
     public static void main(String[] args) {
