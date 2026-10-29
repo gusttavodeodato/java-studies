@@ -14,6 +14,6 @@ public class Instrutor extends Funcionario {
     @Override
     public void mostrarDados() {
         double salarioBonus = salario + calcularBonus();
-        System.out.printf("%nInstrutor: %s - Salário: %.2f%n", nome, salarioBonus);
+        System.out.printf("Instrutor: %s - Salário: R$%.2f%n", nome, salarioBonus);
     }
 }

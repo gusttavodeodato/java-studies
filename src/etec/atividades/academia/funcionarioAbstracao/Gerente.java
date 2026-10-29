@@ -7,13 +7,13 @@ public class Gerente extends Funcionario {
     }
 
     @Override
-    public void mostrarDados() {
-        System.out.printf("Gerente: %s - Salário: %.2f%n", nome, salario);
+    public double calcularBonus() {
+        return salario * 4.50;
     }
 
     @Override
-    public double calcularBonus() {
-       return salario * 4.50;
+    public void mostrarDados() {
+        System.out.printf("Gerente: %s - Salário: R$%.2f%n", nome, salario);
     }
 
 }

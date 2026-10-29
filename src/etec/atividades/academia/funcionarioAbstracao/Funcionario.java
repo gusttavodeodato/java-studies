@@ -1,6 +1,8 @@
 package etec.atividades.academia.funcionarioAbstracao;
 
-public abstract class Funcionario {
+import etec.atividades.academia.interfaces.Pagamento;
+
+public abstract class Funcionario implements Pagamento {
     protected String nome;
     protected double salario;
 
@@ -15,5 +17,10 @@ public abstract class Funcionario {
 
     public void mostrarDados() {
         System.out.printf("Funcionário: %s - Salário com bônus: %.2f\n", nome, salario);
+    }
+
+    @Override
+    public void processarPagamento(double valor) {
+        System.out.printf("\nProcessando pagamento de -> R$%.2f\n", valor);
     }
 }
