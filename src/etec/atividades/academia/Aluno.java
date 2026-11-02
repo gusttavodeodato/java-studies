@@ -1,8 +1,11 @@
 package etec.atividades.academia;
 
+import java.util.List;
+
 public class Aluno {
     private String nome;
     private int idade;
+    private List<PlanoTreino> planos;
 
     public Aluno(String nome, int idade) {
         this.nome = nome;

@@ -12,10 +12,11 @@ public class Main {
         System.out.print("\n------ Dados dos Alunos -------");
         PlanoTreino plano = new PlanoTreino("Treino A", Tipo.MUSCULACAO);
         Aluno aluno1 = new Aluno("Rakim", 22);
-
         System.out.printf("%nPlano: %s | Tipo: %s%n", plano.getNome(), plano.getTipo().getDescricao());
         aluno1.apresentar();
         plano.ativar();
+        plano.desativar();
+
 
         PlanoTreino musculacao = new PlanoTreino("Musculação", Tipo.MUSCULACAO);
         Aluno aluno2 = new Aluno("Corey", 19);
@@ -37,6 +38,7 @@ public class Main {
         gerente.calcularBonus();
 
 
-        System.out.println("\nQuantidade de planos ativos: " + PlanoTreino.totalPlanosAtivos);
+        System.out.println("\nPlanos ativos: " + PlanoTreino.totalPlanosAtivos);
+        System.out.println("Planos inativos: " + PlanoTreino.totalPlanosAtivos);
     }
 }
