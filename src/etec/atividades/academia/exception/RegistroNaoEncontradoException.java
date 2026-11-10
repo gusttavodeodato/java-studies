@@ -1,7 +1,7 @@
 package etec.atividades.academia.exception;
 
-public class RegistroNaoEncontratoException extends RuntimeException {
-    public RegistroNaoEncontratoException(String message) {
+public class RegistroNaoEncontradoException extends RuntimeException {
+    public RegistroNaoEncontradoException(String message) {
         super(message);
     }
 }
